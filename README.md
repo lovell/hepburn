@@ -1,4 +1,4 @@
-<div style="float:right"><a href="http://www.flickr.com/photos/fpcorazza/366135465/" target="_blank"><img src="https://farm1.staticflickr.com/151/366135465_38a9464f5a_o.jpg" title="Illustration &copy; Fabio Paiva Corazza 2007"></a></div>
+<a href="http://www.flickr.com/photos/fpcorazza/366135465/" target="_blank"><img src="https://farm1.staticflickr.com/151/366135465_38a9464f5a_o.jpg" title="Illustration &copy; Fabio Paiva Corazza 2007" align="right"></a>
 
 hepburn
 =======
