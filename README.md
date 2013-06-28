@@ -2,9 +2,9 @@
 
 <a href="http://www.flickr.com/photos/fpcorazza/366135465/" target="_blank"><img src="https://farm1.staticflickr.com/151/366135465_38a9464f5a_m.jpg" title="Illustration &copy; Fabio Paiva Corazza 2007" align="right"></a>
 
-Node.js module for converting Japanese Hiragana to romaji using [Hepburn romanisation](http://en.wikipedia.org/wiki/Hepburn_romanization).
+Node.js module for converting Japanese Hiragana and Katakana script to Romaji using [Hepburn romanisation](http://en.wikipedia.org/wiki/Hepburn_romanization).
 
-Based on Takaaki Komura's [kana2hepburn](https://github.com/emon/kana2hepburn) written in Ruby.
+Based partly on Takaaki Komura's [kana2hepburn](https://github.com/emon/kana2hepburn).
 
 ## Install
 
@@ -12,11 +12,14 @@ Based on Takaaki Komura's [kana2hepburn](https://github.com/emon/kana2hepburn) w
 
 ## Usage
 
-	var hepburn = require("hepburn");  
-	var text = hepburn.fromHiragana("ひらがな");
+```javascript
+var hepburn = require("hepburn");  
+var hirigana = hepburn.fromKana("ひらがな");
+var katakana = hepburn.fromKana("カタカナ");
+```
 
-In this example `text` will have the value `HIRAGANA`.
-
+In this example `hirigana` will have the value `HIRAGANA` and `katakana` will have the value `KATAKANA`.
+	
 ## Testing [![Build Status](https://travis-ci.org/lovell/hepburn.png?branch=master)](https://travis-ci.org/lovell/hepburn)
 
 Run the unit tests with:

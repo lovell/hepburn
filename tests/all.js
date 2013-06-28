@@ -1,7 +1,7 @@
 var assert = require("assert");
 var hepburn = require("../lib/hepburn");
 
-var tests = {
+var hiraganaTests = {
   "ひらがな": "HIRAGANA",
   "あいうえお かきくけこ": "AIUEO KAKIKUKEKO",
   "きゃきゅきょ": "KYAKYUKYO",
@@ -20,9 +20,21 @@ var tests = {
   "きょうと": "KYOTO",
   "きょおと": "KYOTO",
   "とおる": "TORU",
-  "さいとう": "SAITO"
+  "さいとう": "SAITO",
+  "こんにちは": "KONNICHIHA"
 };
 
-for (var hiragana in tests) {
-  assert.equal(hepburn.fromHiragana(hiragana), tests[hiragana], "Conversion failed");
+var katakanaTests = {
+  "カタカナ": "KATAKANA",
+  "チャーシュー": "CHASHU",
+  "ちぢむ": "CHIJIMU",
+  "マッモト": "MAMOTO"
+};
+
+for (var hiragana in hiraganaTests) {
+  assert.equal(hepburn.fromKana(hiragana), hiraganaTests[hiragana], "Hirigana conversion failed");
+}
+
+for (var katakana in katakanaTests) {
+  assert.equal(hepburn.fromKana(katakana), katakanaTests[katakana], "Katakana conversion failed");
 }
