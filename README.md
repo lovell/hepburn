@@ -7,20 +7,20 @@ Based on Takaaki Komura's [kana2hepburn](https://github.com/emon/kana2hepburn) w
 
 # Install
 
-> `npm install hepburn`
+	npm install hepburn
 
 # Usage
 
-> `var hepburn = require("hepburn");  
-> var text = hepburn.fromHiragana("ひらがな");`
+	var hepburn = require("hepburn");  
+	var text = hepburn.fromHiragana("ひらがな");
 
 In this example `text` will have the value `HIRAGANA`.
 
-# Testing
+# Testing [![Build Status](https://travis-ci.org/lovell/hepburn.png?branch=master)](https://travis-ci.org/lovell/hepburn)
 
 Run the unit tests with:
 
-> `node tests/all`
+	node tests/all
 
 # Licence
 
