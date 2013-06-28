@@ -1,30 +1,29 @@
-<a href="http://www.flickr.com/photos/fpcorazza/366135465/" target="_blank"><img src="https://farm1.staticflickr.com/151/366135465_38a9464f5a_o.jpg" title="Illustration &copy; Fabio Paiva Corazza 2007" align="right"></a>
+# Hepburn
 
-hepburn
-=======
+<a href="http://www.flickr.com/photos/fpcorazza/366135465/" target="_blank"><img src="https://farm1.staticflickr.com/151/366135465_38a9464f5a_m.jpg" title="Illustration &copy; Fabio Paiva Corazza 2007" align="right"></a>
 
 Node.js module for converting Japanese Hiragana to romaji using [Hepburn romanisation](http://en.wikipedia.org/wiki/Hepburn_romanization).
 
 Based on Takaaki Komura's [kana2hepburn](https://github.com/emon/kana2hepburn) written in Ruby.
 
-# Install
+## Install
 
 	npm install hepburn
 
-# Usage
+## Usage
 
 	var hepburn = require("hepburn");  
 	var text = hepburn.fromHiragana("ひらがな");
 
 In this example `text` will have the value `HIRAGANA`.
 
-# Testing [![Build Status](https://travis-ci.org/lovell/hepburn.png?branch=master)](https://travis-ci.org/lovell/hepburn)
+## Testing [![Build Status](https://travis-ci.org/lovell/hepburn.png?branch=master)](https://travis-ci.org/lovell/hepburn)
 
 Run the unit tests with:
 
 	node tests/all
 
-# Licence
+## Licence
 
 Copyright 2013 Lovell Fuller
 
