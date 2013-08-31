@@ -17,7 +17,7 @@ var romaji2 = hepburn.fromKana("カタカナ");
 var hiragana = hepburn.toHiragana("HIRAGANA");
 ```
 
-In this example `romaji1` will have the value `HIRAGANA` and `romaji2` will have the value `KATAKANA`.
+In this example `romaji1` will have the value `HIRAGANA`, `romaji2` will have the value `KATAKANA`, and `hiragana` will have the value `ひらがな`.
 	
 ## Testing [![Build Status](https://travis-ci.org/lovell/hepburn.png?branch=master)](https://travis-ci.org/lovell/hepburn)
 
