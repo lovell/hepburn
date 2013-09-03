@@ -2,7 +2,7 @@
   "name": "hepburn",
   "version": "0.2.0",
   "main": "./lib/hepburn",
-  "description": "Convert Japanese Hiragana and Katakana script to Romaji using Hepburn romanisation",
+  "description": "Convert Japanese Hiragana and Katakana script to, and from, Romaji using Hepburn romanisation",
   "repository": {
     "type": "git",
     "url": "git://github.com/lovell/hepburn"
@@ -22,7 +22,7 @@
     "katakana",
     "romaji"
   ],
-  "author": "Lovell Fuller",
+  "author": "Lovell Fuller <npm@lovell.info>",
   "contributors": [
     "John Resig <jeresig@gmail.com>"
   ],

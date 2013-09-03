@@ -11,19 +11,35 @@ Based partly on Takaaki Komura's [kana2hepburn](https://github.com/emon/kana2hep
 ## Usage
 
 ```javascript
-var hepburn = require("hepburn");  
+var hepburn = require("hepburn");
+```
+
+### fromKana(string)
+
+```javascript
 var romaji1 = hepburn.fromKana("ひらがな");
 var romaji2 = hepburn.fromKana("カタカナ");
+```
+
+Converts a string containing Kana, either Hiragana or Katakana, to Romaji.
+
+In this example `romaji1` will have the value `HIRAGANA`, `romaji2` will have the value `KATAKANA`.
+
+### toHiragana(string)
+
+```javascript
 var hiragana = hepburn.toHiragana("HIRAGANA");
 ```
 
-In this example `romaji1` will have the value `HIRAGANA`, `romaji2` will have the value `KATAKANA`, and `hiragana` will have the value `ひらがな`.
-	
+Converts a string containing Romaji to Hiragana.
+
+In this example `hiragana` will have the value `ひらがな`.
+
 ## Testing [![Build Status](https://travis-ci.org/lovell/hepburn.png?branch=master)](https://travis-ci.org/lovell/hepburn)
 
 Run the unit tests with:
 
-	node tests/all
+	npm test
 
 ## Licence
 
