@@ -1,8 +1,6 @@
 # Hepburn
 
-<a href="http://www.flickr.com/photos/fpcorazza/366135465/" target="_blank"><img src="https://farm1.staticflickr.com/151/366135465_38a9464f5a_m.jpg" title="Illustration &copy; Fabio Paiva Corazza 2007" align="right"></a>
-
-Node.js module for converting Japanese Hiragana and Katakana script to Romaji using [Hepburn romanisation](http://en.wikipedia.org/wiki/Hepburn_romanization).
+Node.js module for converting Japanese Hiragana and Katakana script to, and from, Romaji using [Hepburn romanisation](http://en.wikipedia.org/wiki/Hepburn_romanization).
 
 Based partly on Takaaki Komura's [kana2hepburn](https://github.com/emon/kana2hepburn).
 
@@ -14,11 +12,12 @@ Based partly on Takaaki Komura's [kana2hepburn](https://github.com/emon/kana2hep
 
 ```javascript
 var hepburn = require("hepburn");  
-var hirigana = hepburn.fromKana("ひらがな");
-var katakana = hepburn.fromKana("カタカナ");
+var romaji1 = hepburn.fromKana("ひらがな");
+var romaji2 = hepburn.fromKana("カタカナ");
+var hiragana = hepburn.toHiragana("HIRAGANA");
 ```
 
-In this example `hirigana` will have the value `HIRAGANA` and `katakana` will have the value `KATAKANA`.
+In this example `romaji1` will have the value `HIRAGANA`, `romaji2` will have the value `KATAKANA`, and `hiragana` will have the value `ひらがな`.
 	
 ## Testing [![Build Status](https://travis-ci.org/lovell/hepburn.png?branch=master)](https://travis-ci.org/lovell/hepburn)
 
@@ -28,7 +27,7 @@ Run the unit tests with:
 
 ## Licence
 
-Copyright 2013 Lovell Fuller
+Copyright 2013 Lovell Fuller and John Resig
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
