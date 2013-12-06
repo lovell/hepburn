@@ -22,13 +22,13 @@ var hiraganaTests = {
   "とおる": "TOORU",
   "さいとう": "SAITOU",
   "こんにちは": "KONNICHIHA",
+  "ちぢむ": "CHIDJIMU",
   "りんぱ": "RINPA"
 };
 
 var katakanaTests = {
   "カタカナ": "KATAKANA",
   "チャーシュー": "CHASHU",
-  "ちぢむ": "CHIDJIMU",
   "マッモト": "MAMOTO"
 };
 
