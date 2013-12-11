@@ -1,6 +1,20 @@
 var assert = require("assert");
 var hepburn = require("../lib/hepburn");
 
+var katakanaTests = {
+  "カタカナ": "KATAKANA",
+  "チャーシュー": "CHASHU",
+  "マッモト": "MAMMOTO"
+};
+
+var toKatakanaTests = {
+  "KATAKANA": "カタカナ",
+  "TOKYO": "トキョ",
+  "MAKKUDONARUDO": "マックドナルド",
+  "MADONNA": "マドンナ",
+  "TABAKO": "タバコ"
+};
+
 var hiraganaTests = {
   "ひらがな": "HIRAGANA",
   "あいうえお かきくけこ": "AIUEO KAKIKUKEKO",
@@ -24,12 +38,6 @@ var hiraganaTests = {
   "こんにちは": "KONNICHIHA",
   "ちぢむ": "CHIDJIMU",
   "りんぱ": "RINPA"
-};
-
-var katakanaTests = {
-  "カタカナ": "KATAKANA",
-  "チャーシュー": "CHASHU",
-  "マッモト": "MAMOTO"
 };
 
 // Culled from ENAMDICT
@@ -506,14 +514,19 @@ var toHiraganaTests = {
 };
 
 for (var hiragana in hiraganaTests) {
-  assert.equal(hepburn.fromKana(hiragana), hiraganaTests[hiragana], "Hirigana conversion failed");
+  assert.equal(hepburn.fromKana(hiragana), hiraganaTests[hiragana], "Hirigana conversion failed on " + katakana);
 }
 
 for (var katakana in katakanaTests) {
-  assert.equal(hepburn.fromKana(katakana), katakanaTests[katakana], "Katakana conversion failed");
+  assert.equal(hepburn.fromKana(katakana), katakanaTests[katakana], "Katakana conversion failed on " + katakana);
+}
+
+for (var romaji in toKatakanaTests) {
+  assert.equal(hepburn.toKatakana(romaji), toKatakanaTests[romaji], "Hepburn conversion to katakana failed on " + romaji);
+  assert.equal(hepburn.fromKana(toKatakanaTests[romaji]), romaji, "Hepburn conversion from katakana failed on " + romaji);
 }
 
 for (var romaji in toHiraganaTests) {
-  assert.equal(hepburn.toHiragana(romaji), toHiraganaTests[romaji], "Hepburn conversion failed");
-  assert.equal(hepburn.fromKana(toHiraganaTests[romaji]), romaji, "Hepburn conversion failed");
+  assert.equal(hepburn.toHiragana(romaji), toHiraganaTests[romaji], "Hepburn conversion to hiragana failed on " + romaji);
+  assert.equal(hepburn.fromKana(toHiraganaTests[romaji]), romaji, "Hepburn conversion from hiragana failed on " + romaji);
 }
