@@ -514,7 +514,7 @@ var toHiraganaTests = {
 };
 
 for (var hiragana in hiraganaTests) {
-  assert.equal(hepburn.fromKana(hiragana), hiraganaTests[hiragana], "Hirigana conversion failed on " + katakana);
+  assert.equal(hepburn.fromKana(hiragana), hiraganaTests[hiragana], "Hiragana conversion failed on " + hiragana);
 }
 
 for (var katakana in katakanaTests) {
