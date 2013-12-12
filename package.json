@@ -26,7 +26,7 @@
   "author": "Lovell Fuller <npm@lovell.info>",
   "contributors": [
     "John Resig <jeresig@gmail.com>",
-    "Ron Korving <ron.korving@wizcorp.jp>"
+    "Ron Korving <rkorving@wizcorp.jp>"
   ],
   "license": "Apache 2.0",
   "dependencies": {
