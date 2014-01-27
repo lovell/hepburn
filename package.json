@@ -14,7 +14,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "node tests/all"
+    "test": "node tests/all && node tests/macrons"
   },
   "keywords": [
     "japanese",
