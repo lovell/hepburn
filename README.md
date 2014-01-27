@@ -39,11 +39,12 @@ In this example `hiragana` will have the value `ひらがな`.
 
 ```javascript
 var katakana = hepburn.toKatakana("KATAKANA");
+var tokyo = hepburn.toKatakana("TŌKYŌ"); 
 ```
 
 Converts a string containing Romaji to Katakana.
 
-In this example `katakana` will have the value `カタカナ`.
+In this example `katakana` will have the value `カタカナ` and `tokyo` will have the value `トーキョー`.
 
 ### cleanRomaji(string)
 
@@ -70,7 +71,7 @@ Run the unit tests with:
 
 ## Licence
 
-Copyright 2013 Lovell Fuller, John Resig and Ron Korving
+Copyright 2013, 2014 Lovell Fuller, John Resig, Ron Korving and Brian Gesiak
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
