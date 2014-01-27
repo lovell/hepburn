@@ -18,8 +18,8 @@ var toKatakanaTests = {
 };
 
 for (var katakana in katakanaTests) {
-  converted = hepburn.fromKana(katakana);
-  expected = katakanaTests[katakana]
+  var converted = hepburn.fromKana(katakana);
+  var expected = katakanaTests[katakana]
   assert.equal(converted, expected,
     "Katakana conversion failed on " + katakana + ", expected \"" +
       expected + "\" but got \"" + converted + "\".");
