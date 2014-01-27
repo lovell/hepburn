@@ -513,6 +513,19 @@ var toHiraganaTests = {
   "KONOHA": "このは"
 };
 
+var cleanTests = {
+  "shunsho": "SHUNSHO",
+  "SYUNMAN": "SHUNMAN",
+  "SHUMMAN": "SHUNMAN",
+  "EISYOSAI": "EISHOSAI",
+  "SYUNNEI": "SHUN'EI",
+  "OHUCHI": "OOUCHI",
+  "TOUKYOU": "TOOKYOO",
+  "TOHKYOH": "TOOKYOO",
+  "SENCYUSYA": "SENCHUSHA",
+  "YOSHIHUJI": "YOSHIFUJI"
+};
+
 for (var hiragana in hiraganaTests) {
   assert.equal(hepburn.fromKana(hiragana), hiraganaTests[hiragana], "Hiragana conversion failed on " + hiragana);
 }
@@ -529,4 +542,8 @@ for (var romaji in toKatakanaTests) {
 for (var romaji in toHiraganaTests) {
   assert.equal(hepburn.toHiragana(romaji), toHiraganaTests[romaji], "Hepburn conversion to hiragana failed on " + romaji);
   assert.equal(hepburn.fromKana(toHiraganaTests[romaji]), romaji, "Hepburn conversion from hiragana failed on " + romaji);
+}
+
+for (var hiragana in cleanTests) {
+  assert.equal(hepburn.cleanRomaji(hiragana), cleanTests[hiragana], "Failed to clean " + hiragana);
 }

@@ -45,6 +45,23 @@ Converts a string containing Romaji to Katakana.
 
 In this example `katakana` will have the value `カタカナ`.
 
+### cleanRomaji(string)
+
+```javascript
+var cleaned = hepburn.cleanRomaji("SYUNNEI");
+// cleaned === "SHUN'EI"
+```
+
+Cleans up a romaji string, changing old romaji forms into the more-modern
+Hepburn form (for further processing). Generally matches the style used by [Wapro romaji](https://en.wikipedia.org/wiki/W%C4%81puro_r%C5%8Dmaji). A larger [guide to modern romaji conventions](http://nayuki.eigenstate.org/page/variations-on-japanese-romanization) was used in building this method.
+
+What this methods fixes:
+
+* Incorrect usage of the letter M. For example "Shumman" should be written as "Shunman".
+* Changing usage of NN into N', for example "Shunnei" becomes "Shun'ei".
+* Converting the usage of OU and OH (to indicate a long vowel) into OO.
+* Correct old usages [Nihon-shiki romanization](https://en.wikipedia.org/wiki/Nihon-shiki_romanization) into Hepburn form. A full list of the conversions can be found in the `hepburn.js` file. For example "Eisyosai" becomes "Eishosai" and "Yoshihuji" becomes "Yoshifuji".
+
 ## Testing [![Build Status](https://travis-ci.org/lovell/hepburn.png?branch=master)](https://travis-ci.org/lovell/hepburn)
 
 Run the unit tests with:
