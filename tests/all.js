@@ -514,6 +514,7 @@ var toHiraganaTests = {
 
 var cleanTests = {
   "shunsho": "SHUNSHO",
+  "JAKUCHU": "JAKUCHU",
   "SYUNMAN": "SHUNMAN",
   "SHUMMAN": "SHUNMAN",
   "EISYOSAI": "EISHOSAI",
