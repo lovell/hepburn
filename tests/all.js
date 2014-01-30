@@ -11,7 +11,8 @@ var toKatakanaTests = {
   "TOKYO": "トキョ",
   "MAKKUDONARUDO": "マックドナルド",
   "MADONNA": "マドンナ",
-  "TABAKO": "タバコ"
+  "TABAKO": "タバコ",
+  "ITCHOO": "イッチョオ"
 };
 
 var hiraganaTests = {
@@ -509,7 +510,8 @@ var toHiraganaTests = {
   "KOTONO": "ことの",
   "KOTOHA": "ことは",
   "KONAMI": "こなみ",
-  "KONOHA": "このは"
+  "KONOHA": "このは",
+  "ITCHOO": "いっちょお"
 };
 
 var cleanTests = {
