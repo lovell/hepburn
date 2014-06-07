@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 var assert = require("assert");
 var hepburn = require("../lib/hepburn");
 
@@ -19,7 +22,7 @@ var toKatakanaTests = {
 
 for (var katakana in katakanaTests) {
   var converted = hepburn.fromKana(katakana);
-  var expected = katakanaTests[katakana]
+  var expected = katakanaTests[katakana];
   assert.equal(converted, expected,
     "Katakana conversion failed on " + katakana + ", expected \"" +
       expected + "\" but got \"" + converted + "\".");

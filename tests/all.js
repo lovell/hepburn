@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 var assert = require("assert");
 var hepburn = require("../lib/hepburn");
 
