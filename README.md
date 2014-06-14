@@ -63,6 +63,18 @@ What this methods fixes:
 * Converting the usage of OU and OH (to indicate a long vowel) into OO.
 * Correct old usages [Nihon-shiki romanization](https://en.wikipedia.org/wiki/Nihon-shiki_romanization) into Hepburn form. A full list of the conversions can be found in the `hepburn.js` file. For example "Eisyosai" becomes "Eishosai" and "Yoshihuji" becomes "Yoshifuji".
 
+### containsHiragana(string)
+
+Returns `true` if `string` contains Hiragana.
+
+### containsKatakana(string)
+
+Returns `true` if `string` contains Katakana.
+
+### containsKana(string)
+
+Returns `true` if `string` contains any Kana.
+
 ## Testing [![Build Status](https://travis-ci.org/lovell/hepburn.png?branch=master)](https://travis-ci.org/lovell/hepburn)
 
 Run the unit tests with:
