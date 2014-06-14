@@ -552,3 +552,30 @@ for (var romaji in toHiraganaTests) {
 for (var hiragana in cleanTests) {
   assert.equal(hepburn.cleanRomaji(hiragana), cleanTests[hiragana], "Failed to clean " + hiragana);
 }
+
+Object.keys(hiraganaTests).forEach(function(key){
+  assert(hepburn.containsHiragana(key))
+  assert(!hepburn.containsKatakana(key))
+  assert(hepburn.containsKana(key))
+})
+
+Object.keys(katakanaTests).forEach(function(key){
+  assert(!hepburn.containsHiragana(key))
+  assert(hepburn.containsKatakana(key))
+  assert(hepburn.containsKana(key))
+})
+
+assert(!hepburn.containsKatakana("the quick red fox jumps over the lazy brown dog"))
+assert(!hepburn.containsHiragana("the quick red fox jumps over the lazy brown dog"))
+
+assert(hepburn.containsKatakana("カthe quick red fox jumps over the lazy brown dog"))
+assert(!hepburn.containsHiragana("カthe quick red fox jumps over the lazy brown dog"))
+assert(hepburn.containsKana("カthe quick red fox jumps over the lazy brown dog"))
+
+assert(!hepburn.containsKatakana("ひthe quick red fox jumps over the lazy brown dog"))
+assert(hepburn.containsHiragana("ひthe quick red fox jumps over the lazy brown dog"))
+assert(hepburn.containsKana("ひthe quick red fox jumps over the lazy brown dog"))
+
+assert(hepburn.containsKatakana("カひ"))
+assert(hepburn.containsHiragana("カひ"))
+assert(hepburn.containsKana("カひ"))
