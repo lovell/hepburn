@@ -1,2 +1,4 @@
+.travis.yml
 node_modules
 package-lock.json
+tests

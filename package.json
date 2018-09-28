@@ -8,7 +8,7 @@
     "url": "git://github.com/lovell/hepburn"
   },
   "engines": {
-    "node": ">=0.8"
+    "node": ">=4"
   },
   "directories": {
     "test": "tests"
@@ -28,7 +28,8 @@
     "John Resig <jeresig@gmail.com>",
     "Ron Korving <rkorving@wizcorp.jp>",
     "Brian Gesiak <modocache@gmail.com>",
-    "Luke Roberts <email@luke-roberts.co.uk>"
+    "Luke Roberts <email@luke-roberts.co.uk>",
+    "Quentin Bramas <quentin.bramas@gmail.com>"
   ],
   "license": "Apache-2.0",
   "dependencies": {
