@@ -83,7 +83,7 @@ Run the unit tests with:
 
 ## Licence
 
-Copyright 2013, 2014, 2015 Lovell Fuller, John Resig, Ron Korving and Brian Gesiak
+Copyright 2013, 2014, 2015, 2018 Lovell Fuller and contributors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
