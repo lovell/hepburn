@@ -9,7 +9,10 @@ var katakanaTests = {
   "リード": "RĪDO",
   "リユース": "RIYŪSU",
   "リベース": "RIBĒSU",
-  "リロード": "RIRŌDO"
+  "リロード": "RIRŌDO",
+  "ショップ": "SHOPPU",
+  "フォト":   "FOTO",
+  "フェイク": "FEIKU"
 };
 
 var toKatakanaTests = {
@@ -32,4 +35,3 @@ for (var romaji in toKatakanaTests) {
   assert.equal(hepburn.toKatakana(romaji), toKatakanaTests[romaji], "Hepburn conversion to katakana failed on " + romaji);
   assert.equal(hepburn.fromKana(toKatakanaTests[romaji]), romaji, "Hepburn conversion from katakana failed on " + romaji);
 }
-
