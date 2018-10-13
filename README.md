@@ -75,6 +75,10 @@ Returns `true` if `string` contains Katakana.
 
 Returns `true` if `string` contains any Kana.
 
+### containsKanji(string)
+
+Returns `true` if `string` contains any Kanji.
+
 ## Testing [![Build Status](https://travis-ci.org/lovell/hepburn.png?branch=master)](https://travis-ci.org/lovell/hepburn)
 
 Run the unit tests with:

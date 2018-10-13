@@ -557,25 +557,36 @@ Object.keys(hiraganaTests).forEach(function(key){
   assert(hepburn.containsHiragana(key));
   assert(!hepburn.containsKatakana(key));
   assert(hepburn.containsKana(key));
+  assert(!hepburn.containsKanji(key))
 });
 
 Object.keys(katakanaTests).forEach(function(key){
   assert(!hepburn.containsHiragana(key));
   assert(hepburn.containsKatakana(key));
   assert(hepburn.containsKana(key));
+  assert(!hepburn.containsKanji(key));
 });
 
 assert(!hepburn.containsKatakana("the quick red fox jumps over the lazy brown dog"));
 assert(!hepburn.containsHiragana("the quick red fox jumps over the lazy brown dog"));
+assert(!hepburn.containsKanji("the quick red fox jumps over the lazy brown dog"));
 
 assert(hepburn.containsKatakana("カthe quick red fox jumps over the lazy brown dog"));
 assert(!hepburn.containsHiragana("カthe quick red fox jumps over the lazy brown dog"));
 assert(hepburn.containsKana("カthe quick red fox jumps over the lazy brown dog"));
+assert(!hepburn.containsKanji("カthe quick red fox jumps over the lazy brown dog"));
 
 assert(!hepburn.containsKatakana("ひthe quick red fox jumps over the lazy brown dog"));
 assert(hepburn.containsHiragana("ひthe quick red fox jumps over the lazy brown dog"));
 assert(hepburn.containsKana("ひthe quick red fox jumps over the lazy brown dog"));
+assert(!hepburn.containsKanji("ひthe quick red fox jumps over the lazy brown dog"));
 
 assert(hepburn.containsKatakana("カひ"));
 assert(hepburn.containsHiragana("カひ"));
 assert(hepburn.containsKana("カひ"));
+assert(!hepburn.containsKanji("カひ"));
+
+assert(!hepburn.containsKatakana("富士山"));
+assert(!hepburn.containsHiragana("富士山"));
+assert(!hepburn.containsKana("富士山"));
+assert(hepburn.containsKanji("富士山"));
