@@ -54,7 +54,10 @@ var cleaned = hepburn.cleanRomaji("SYUNNEI");
 ```
 
 Cleans up a romaji string, changing old romaji forms into the more-modern
-Hepburn form (for further processing). Generally matches the style used by [Wapro romaji](https://en.wikipedia.org/wiki/W%C4%81puro_r%C5%8Dmaji). A larger [guide to modern romaji conventions](http://nayuki.eigenstate.org/page/variations-on-japanese-romanization) was used in building this method.
+Hepburn form (for further processing). Generally matches the style used by
+[Wapro romaji](https://en.wikipedia.org/wiki/W%C4%81puro_r%C5%8Dmaji).
+A larger [guide to modern romaji conventions](https://www.nayuki.io/page/variations-on-japanese-romanization)
+was used in building this method.
 
 What this methods fixes:
 
