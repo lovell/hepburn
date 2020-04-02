@@ -528,7 +528,8 @@ var cleanTests = {
   "TOUKYOU": "TOOKYOO",
   "TOHKYOH": "TOOKYOO",
   "SENCYUSYA": "SENCHUSHA",
-  "YOSHIHUJI": "YOSHIFUJI"
+  "YOSHIHUJI": "YOSHIFUJI",
+  "CHYAASHYUU": "CHAASHUU"
 };
 
 for (var hiragana in hiraganaTests) {
