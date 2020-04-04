@@ -39,7 +39,7 @@ In this example `hiragana` will have the value `ひらがな`.
 
 ```javascript
 var katakana = hepburn.toKatakana("KATAKANA");
-var tokyo = hepburn.toKatakana("TŌKYŌ"); 
+var tokyo = hepburn.toKatakana("TŌKYŌ");
 ```
 
 Converts a string containing Romaji to Katakana.
@@ -65,6 +65,28 @@ What this methods fixes:
 * Changing usage of NN into N', for example "Shunnei" becomes "Shun'ei".
 * Converting the usage of OU and OH (to indicate a long vowel) into OO.
 * Correct old usages [Nihon-shiki romanization](https://en.wikipedia.org/wiki/Nihon-shiki_romanization) into Hepburn form. A full list of the conversions can be found in the `hepburn.js` file. For example "Eisyosai" becomes "Eishosai" and "Yoshihuji" becomes "Yoshifuji".
+
+### splitKana(string)
+
+```javascript
+var hiragana = hepburn.splitKana("ひらがな");
+var tokyo = hepburn.splitKana("トーキョー");
+```
+
+Splits a string containing Katakana or Hiragana into a syllables array.
+
+In this example `hiragana` will have the value `["ひ", "ら", "が", "な"]` and `tokyo` will have the value `["トー", "キョー"]`.
+
+### splitRomaji(string)
+
+```javascript
+var tokyo = hepburn.splitRomaji("TŌKYŌ");
+var pakkingu = hepburn.splitRomaji("PAKKINGU");
+```
+
+Splits a string containing Romaji into a syllables array.
+
+In this example `tokyo` will have the value `["TŌ", "KYŌ"]` and `pakkingu` will have the value `["PAK", "KI", "N", "GU"]`.
 
 ### containsHiragana(string)
 
