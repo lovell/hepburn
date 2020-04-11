@@ -14,7 +14,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "node tests/all && node tests/macrons"
+    "test": "node tests/all && node tests/macrons && echo \"tests passed successfully\""
   },
   "keywords": [
     "japanese",

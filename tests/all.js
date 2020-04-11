@@ -532,6 +532,50 @@ var cleanTests = {
   "CHYAASHYUU": "CHAASHUU"
 };
 
+var hiraganaSplitTests = {
+  "ひらがな": ["ひ", "ら", "が", "な"],
+  "あいうえお かきくけこ": [
+    "あ", "い", "う", "え", "お",
+    " ",
+    "か", "き", "く", "け", "こ"
+  ],
+  "きゃきゅきょ": ["きゃ", "きゅ", "きょ"],
+  "あんこ": ["あ", "ん", "こ"],
+  "どらえもん": ["ど", "ら", "え", "も", "ん"],
+  "だんな": ["だ", "ん", "な"],
+  "へっぽこ": ["へっ", "ぽ", "こ"],
+  "きょうと": ["きょ", "う", "と"],
+  "こんにちは": ["こ", "ん", "に", "ち", "は"]
+}
+
+var katakanaSplitTests = {
+  "カタカナ": ["カ", "タ", "カ", "ナ"],
+  "カタ カナ": ["カ", "タ", " ", "カ", "ナ"],
+  "マッモト": ["マッ", "モ", "ト"],
+  "コミッター": ["コ", "ミッ", "ター"],
+  "リード": ["リー", "ド"],
+  "リユース": ["リ", "ユー", "ス"],
+  "ショップ": ["ショッ", "プ"]
+}
+
+var romajiSplitTests = {
+  "KATAKANA": ["KA", "TA", "KA", "NA"],
+  "TOKYO": ["TO", "KYO"],
+  "TOOKYOO": ["TO", "O", "KYO", "O"],
+  "TOUKYOU": ["TO", "U", "KYO", "U"],
+  "MAKKUDONARUDO": ["MAK", "KU", "DO", "NA", "RU", "DO"],
+  "MADONNA": ["MA", "DO", "N", "NA"],
+  "TABAKO": ["TA", "BA", "KO"],
+  "ITCHOO": ["IT", "CHO", "O"],
+  "TĀMINARU": ["TĀ", "MI", "NA", "RU"],
+  "MĪTOAPPU": ["MĪ", "TO", "AP", "PU"],
+  "MŪBU": ["MŪ", "BU"],
+  "PĒSU": ["PĒ", "SU"],
+  "TŌKYŌ": ["TŌ", "KYŌ"],
+  "BYAKKUGAN": ["BYAK", "KU", "GA", "N"],
+  "DANNA SAMA": ["DA", "N", "NA", " ", "SA", "MA"]
+};
+
 for (var hiragana in hiraganaTests) {
   assert.equal(hepburn.fromKana(hiragana), hiraganaTests[hiragana], "Hiragana conversion failed on " + hiragana);
 }
@@ -553,6 +597,19 @@ for (var romaji in toHiraganaTests) {
 for (var hiragana in cleanTests) {
   assert.equal(hepburn.cleanRomaji(hiragana), cleanTests[hiragana], "Failed to clean " + hiragana);
 }
+
+for (var hiragana in hiraganaSplitTests) {
+  assert.deepEqual(hepburn.splitKana(hiragana), hiraganaSplitTests[hiragana], "Failed to split " + hiragana);
+}
+
+for (var katakana in katakanaSplitTests) {
+  assert.deepEqual(hepburn.splitKana(katakana), katakanaSplitTests[katakana], "Failed to split kana " + katakana);
+}
+
+for (var romaji in romajiSplitTests) {
+  assert.deepEqual(hepburn.splitRomaji(romaji), romajiSplitTests[romaji], "Failed to split romaji " + romaji);
+}
+
 
 Object.keys(hiraganaTests).forEach(function(key){
   assert(hepburn.containsHiragana(key));
