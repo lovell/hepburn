@@ -34,7 +34,5 @@
     "Adrien Risser <risseraka@gmail.com>"
   ],
   "license": "Apache-2.0",
-  "dependencies": {
-    "bulk-replace": "0.0.1"
-  }
+  "dependencies": {}
 }
