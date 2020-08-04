@@ -6,7 +6,9 @@ var hepburn = require("../lib/hepburn");
 
 var katakanaTests = {
   "カタカナ": "KATAKANA",
-  "マッモト": "MAMMOTO"
+  "マッモト": "MAMMOTO",
+  "ｶﾀｶﾅ": "KATAKANA",
+  "ﾏｯｸﾄﾞﾅﾙﾄﾞ": "MAKKUDONARUDO"
 };
 
 var toKatakanaTests = {
