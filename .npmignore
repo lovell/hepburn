@@ -1,4 +1,4 @@
-.travis.yml
+.github/
 node_modules
 package-lock.json
 tests

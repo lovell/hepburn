@@ -1,0 +1,23 @@
+on:
+  - push
+  - pull_request
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version:
+          - 4
+          - 6
+          - 8
+          - 10
+          - 12
+          - 14
+          - 15
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm test
