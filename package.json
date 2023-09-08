@@ -10,9 +10,9 @@
   "engines": {
     "node": ">=4"
   },
-  "directories": {
-    "test": "tests"
-  },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "node tests/all && node tests/macrons && echo \"tests passed successfully\""
   },
