@@ -1,6 +1,6 @@
 {
   "name": "hepburn",
-  "version": "1.2.1",
+  "version": "1.2.2-rc.0",
   "main": "./lib/hepburn",
   "description": "Convert Japanese Hiragana and Katakana script to, and from, Romaji using Hepburn romanisation",
   "repository": {
