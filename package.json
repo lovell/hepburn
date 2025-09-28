@@ -5,7 +5,7 @@
   "description": "Convert Japanese Hiragana and Katakana script to, and from, Romaji using Hepburn romanisation",
   "repository": {
     "type": "git",
-    "url": "git://github.com/lovell/hepburn"
+    "url": "git://github.com/lovell/hepburn.git"
   },
   "engines": {
     "node": ">=4"
@@ -33,8 +33,5 @@
     "Matt Scheurich <matt@lvl99.com>",
     "Adrien Risser <risseraka@gmail.com>"
   ],
-  "license": "Apache-2.0",
-  "dependencies": {
-    "bulk-replace": "0.0.1"
-  }
+  "license": "Apache-2.0"
 }

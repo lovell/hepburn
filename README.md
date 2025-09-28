@@ -1,6 +1,6 @@
 # Hepburn
 
-Node.js module for converting Japanese Hiragana and Katakana script to, and from, Romaji using [Hepburn romanisation](http://en.wikipedia.org/wiki/Hepburn_romanization).
+Node.js module for converting Japanese Hiragana and Katakana script to, and from, Romaji using [Hepburn romanisation](https://en.wikipedia.org/wiki/Hepburn_romanization).
 
 Based partly on Takaaki Komura's [kana2hepburn](https://github.com/emon/kana2hepburn).
 
@@ -64,7 +64,7 @@ What this methods fixes:
 * Incorrect usage of the letter M. For example "Shumman" should be written as "Shunman".
 * Changing usage of NN into N', for example "Shunnei" becomes "Shun'ei".
 * Converting the usage of OU and OH (to indicate a long vowel) into OO.
-* Correct old usages [Nihon-shiki romanization](https://en.wikipedia.org/wiki/Nihon-shiki_romanization) into Hepburn form. A full list of the conversions can be found in the `hepburn.js` file. For example "Eisyosai" becomes "Eishosai" and "Yoshihuji" becomes "Yoshifuji".
+* Correcting the usage of [Nihon-shiki](https://en.wikipedia.org/wiki/Nihon-shiki) into Hepburn form. A full list of the conversions can be found in the `hepburn.js` file. For example "Eisyosai" becomes "Eishosai" and "Yoshihuji" becomes "Yoshifuji".
 
 ### splitKana(string)
 
@@ -104,19 +104,13 @@ Returns `true` if `string` contains any Kana.
 
 Returns `true` if `string` contains any Kanji.
 
-## Testing [![Build Status](https://travis-ci.org/lovell/hepburn.png?branch=master)](https://travis-ci.org/lovell/hepburn)
-
-Run the unit tests with:
-
-	npm test
-
 ## Licence
 
-Copyright 2013, 2014, 2015, 2018, 2020 Lovell Fuller and contributors.
+Copyright 2013 Lovell Fuller and contributors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
-You may obtain a copy of the License at [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
+You may obtain a copy of the License at [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
