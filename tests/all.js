@@ -8,7 +8,11 @@ var katakanaTests = {
   "カタカナ": "KATAKANA",
   "マッモト": "MAMMOTO",
   "ｶﾀｶﾅ": "KATAKANA",
-  "ﾏｯｸﾄﾞﾅﾙﾄﾞ": "MAKKUDONARUDO"
+  "ﾏｯｸﾄﾞﾅﾙﾄﾞ": "MAKKUDONARUDO",
+  "シンヨウ": "SHIN'YOU",
+  "キンエン": "KIN'EN",
+  "ホンヤ": "HON'YA",
+  "グンマ": "GUNMA"
 };
 
 var toKatakanaTests = {
@@ -42,7 +46,11 @@ var hiraganaTests = {
   "さいとう": "SAITOU",
   "こんにちは": "KONNICHIHA",
   "ちぢむ": "CHIDJIMU",
-  "りんぱ": "RINPA"
+  "りんぱ": "RINPA",
+  "しんよう": "SHIN'YOU",
+  "きんえん": "KIN'EN",
+  "ほんや": "HON'YA",
+  "ぐんま": "GUNMA"
 };
 
 // Culled from ENAMDICT
