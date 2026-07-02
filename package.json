@@ -1,6 +1,6 @@
 {
   "name": "hepburn",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "main": "./lib/hepburn",
   "description": "Convert Japanese Hiragana and Katakana script to, and from, Romaji using Hepburn romanisation",
   "repository": {
@@ -31,7 +31,8 @@
     "Luke Roberts <email@luke-roberts.co.uk>",
     "Quentin Bramas <quentin.bramas@gmail.com>",
     "Matt Scheurich <matt@lvl99.com>",
-    "Adrien Risser <risseraka@gmail.com>"
+    "Adrien Risser <risseraka@gmail.com>",
+    "greymoth <m.hirakawa07@icloud.com>"
   ],
   "license": "Apache-2.0"
 }
